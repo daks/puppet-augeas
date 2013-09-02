@@ -5,7 +5,7 @@
 class augeas::params {
   $lens_dir = '/usr/share/augeas/lenses'
 
-  case $::osfamily {
+  case $::operatingsystem {
     'RedHat': {
       $ruby_pkg = 'ruby-augeas'
       $augeas_pkgs = ['augeas', 'augeas-libs']
